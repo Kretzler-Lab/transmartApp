@@ -2,17 +2,41 @@ import groovy.sql.Sql
 
 class MonitorService {
 
-    def dataSource;
+    def grailsApplication
+    def dataSource
 
-    def getDatabaseStatus() {
+    def getObservationCount() {
 
         Sql sql = new Sql(dataSource)
-        String sqlText = "select 1 + 1;"
+        String sqlText = "SELECT COUNT(*) FROM i2b2demodata.observation_fact"
         def result = sql.firstRow(sqlText)
-        if (result.values()[0] == 2)
-            return "OK"
-        else
-            return "ERROR"
+        return result.values()[0]
 
     }
+
+    def getNephDataAttestationExists() {
+        Sql sql = new Sql(dataSource)
+        String sqlText = """
+        SELECT EXISTS (
+                    SELECT 1
+                    FROM   information_schema.tables
+                    WHERE  table_schema = 'searchapp'
+                    AND    table_name = 'data_attestation'
+        )
+        """
+        def result = sql.firstRow(sqlText)
+        return result.values()[0]
+    }
+
+    def getLoadedStudies() {
+        Sql sql = new Sql(dataSource)
+        String sqlText = "SELECT c_name FROM i2b2metadata.i2b2 WHERE c_visualattributes = 'FAS'"
+        return sql.rows(sqlText).collect({ it.getAt(0)}).join(", ")
+    }
+
+    def getAppVersion() {
+        return grailsApplication.metadata['app.version']
+    }
+
+
 }
