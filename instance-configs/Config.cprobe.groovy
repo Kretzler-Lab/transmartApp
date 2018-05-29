@@ -8,7 +8,6 @@
  * production environment when running grails run-app are scenarios that have
  * NOT been tested.
  */
-quickStartURL = "../../files/NEPTUNE_tranSMART_Quick_Start_Guide.pdf"
 
 // if running as a WAR, we need these
 def catalinaBase      = System.getProperty('catalina.base') ?: '.'
@@ -171,11 +170,11 @@ com.recomdata.largeLogo = "cprobeLogo.png"
 com.recomdata.searchtool.smallLogo="cprobeLogo.png"
 
 // contact email address
-com.recomdata.contactUs = "mailto:NeptuneTMSupport@umich.edu"
-com.recomdata.searchtool.contactUs = "mailto:roesch@med.umich.edu"
+com.recomdata.contactUs = "mailto:CPROBEtmSupport@umich.edu"
+com.recomdata.searchtool.contactUs = "mailto:CPROBEtmSupport@umich.edu"
 
 // administrator email address
-com.recomdata.administrator="roesch@med.umich.edu"
+com.recomdata.administrator="CPROBEtmSupport@umich.edu"
 
 // application title
 com.recomdata.appTitle = "C-Probe tranSMART" // v + org.transmart.originalConfigBinding.appVersion +  " (GPL, PostgresSQL)"
