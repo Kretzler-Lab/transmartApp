@@ -33,7 +33,7 @@ Upon login, new users will be asked to agree to the data usage and <br />
 attribution policy of the site.  Renewal of that agreement will be <br />
 requested every 90 days.  <br />
 <br/>
-Contact <a href="mailto:roesch@med.umich.edu" style="color: #0000EE; text-decoration: underline">support</a> if you have forgotten your username and/or password.
+Contact <a href="mailto:CPROBEtmSupport@umich.edu" style="color: #0000EE; text-decoration: underline">support</a> if you have forgotten your username and/or password.
 </center>
 """
 }
@@ -173,8 +173,8 @@ com.recomdata.searchtool.smallLogo="cprobeLogo.png"
 com.recomdata.contactUs = "mailto:CPROBEtmSupport@umich.edu"
 com.recomdata.searchtool.contactUs = "mailto:CPROBEtmSupport@umich.edu"
 
-// administrator email address
-com.recomdata.administrator="CPROBEtmSupport@umich.edu"
+// site administrator contact email address
+com.recomdata.adminEmail = "CPROBEtmSupport@umich.edu"
 
 // application title
 com.recomdata.appTitle = "C-Probe tranSMART" // v + org.transmart.originalConfigBinding.appVersion +  " (GPL, PostgresSQL)"
