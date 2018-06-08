@@ -9,7 +9,6 @@
  * NOT been tested.
  */
 
-quickStartURL = "../../files/CureGN_tranSMART_Quick_Start_Guide.pdf"
 dataAttestationText = """
 <p>
 It is the responsibility of all users to protect the privacy of individuals who are subjects in the data; to not use or disclose the data other than as permitted; and to appropriately secure the data.</p>
@@ -181,7 +180,7 @@ com.recomdata.adminEmail = "CureGNtmSupport@umich.edu"
 com.recomdata.appTitle = "CureGN tranSMART"
 
 //Quick Start Guide URL
-quickStartURL = "../../files/NEPTUNE_tranSMART_Quick_Start_Guide.pdf"
+quickStartURL = "../../files/CureGN_tranSMART_Quick_Start_Guide.pdf"
 
 // Location of the help pages. Should be an absolute URL.
 // Currently, these are distribution with transmart,

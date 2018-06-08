@@ -180,7 +180,7 @@ com.recomdata.adminEmail = "CPROBEtmSupport@umich.edu"
 com.recomdata.appTitle = "C-Probe tranSMART" // v + org.transmart.originalConfigBinding.appVersion +  " (GPL, PostgresSQL)"
 
 //Quick Start Guide URL
-quickStartURL = "../../files/NEPTUNE_tranSMART_Quick_Start_Guide.pdf"
+quickStartURL = "../../files/CPROBE_tranSMART_Quick_Start_Guide.pdf"
 
 // Location of the help pages. Should be an absolute URL.
 // Currently, these are distribution with transmart,
