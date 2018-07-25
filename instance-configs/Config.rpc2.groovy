@@ -177,16 +177,10 @@ com.recomdata.adminEmail = "RPC2TMSupport@umich.edu"
 com.recomdata.appTitle = "RPC2 tranSMART"
 
 //Quick Start Guide URL
-quickStartURL = "../../files/NEPTUNE_tranSMART_Quick_Start_Guide.pdf"
+quickStartURL = "../../files/RPC2_tranSMART_Quick_Start_Guide.pdf"
 
 // Location of the help pages. Should be an absolute URL.
-// Currently, these are distribution with transmart,
-// so it can also point to that location copy.
-if (transmartURL.startsWith('http://localhost:')) {
-	com.recomdata.adminHelpURL = "/transmart/help/adminHelp/default.htm"
-} else {
-	com.recomdata.adminHelpURL = "$transmartURL/help/adminHelp/default.htm"
-}
+com.recomdata.adminHelpURL = "http://transmart-app.readthedocs.io/en/latest/index.html"
 
 environments { development {
     com.recomdata.bugreportURL = 'https://jira.transmartfoundation.org'
