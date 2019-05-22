@@ -191,6 +191,9 @@ com.recomdata.appTitle = "Neptune tranSMART"
 
 //Quick Start Guide URL
 quickStartURL = "../../files/NEPTUNE_tranSMART_Quick_Start_Guide.pdf"
+scatterPlotURL = "../../files/NEPTUNE_scatterplot.pdf"
+boxPlotURL = "../../files/NEPTUNE_boxplot.pdf"
+diffexURL = "../../files/NEPTUNE_diffex.pdf"
 
 // Location of the help pages. Should be an absolute URL.
 com.recomdata.adminHelpURL = "http://transmart-app.readthedocs.io/en/latest/index.html"
