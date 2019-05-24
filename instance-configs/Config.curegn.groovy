@@ -181,6 +181,8 @@ com.recomdata.appTitle = "CureGN tranSMART"
 
 //Quick Start Guide URL
 quickStartURL = "../../files/CureGN_tranSMART_Quick_Start_Guide.pdf"
+scatterPlotURL = "../../files/Cure_scatterplot.pdf"
+boxPlotURL = "../../files/Cure_boxplot.pdf"
 
 // Location of the help pages. Should be an absolute URL.
 com.recomdata.adminHelpURL = "http://transmart-app.readthedocs.io/en/latest/index.html"

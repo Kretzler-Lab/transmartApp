@@ -97,9 +97,19 @@ span.utilMenuSeparator {
 		<ul class="subMenu">
 			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.com.recomdata.adminHelpURL}', '_help')">Transmart Wiki</a></li>
 			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.quickStartURL}', '_quick_start')">Quick Start Guide</a></li>
-			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.scatterPlotURL}', '_scatter_plot')">Scatter Plot</a></li>
-			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.boxPlotURL}', '_box_plot')">Box Plot</a></li>
-			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.diffexURL}', '_diff_ex')">Differential Expression</a></li>			
+			<g:if test="${railsApplication.config.selectingDataURL != null && !railsApplication.config.selectingDataURL.isEmpty()}">
+				<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.sselectingDataURL}', '_selecting_data')">Selecting Data</a></li>
+			</g:if>
+
+			<g:if test="${railsApplication.config.scatterPlotURL != null && !railsApplication.config.scatterPlotURL.isEmpty()}">
+				<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.scatterPlotURL}', '_scatter_plot')">Scatter Plot</a></li>
+			</g:if>
+			<g:if test="${grailsApplication.config.boxPlotURL != null && !grailsApplication.config.boxPlotURL.isEmpty()}">
+				<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.boxPlotURL}', '_box_plot')">Box Plot</a></li>
+			</g:if>
+			<g:if test="${grailsApplication.config.diffexURL != null && !grailsApplication.config.diffexURL.isEmpty()}">
+				<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.diffexURL}', '_diff_ex')">Differential Expression</a></li>			
+			</g:if>
 		</ul>
         <li class="utilMenuSeparator"><span class="utilMenuSeparator">&nbsp;</span></li>
 		<ul>
