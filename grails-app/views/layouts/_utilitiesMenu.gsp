@@ -33,7 +33,7 @@
     background: transparent;
     border: 0 none;
     list-style: none;
-    margin: 10px 0 10px 25px;
+    margin: 10px 0 10px 10px;
 }
 
 #utilitiesMenu li {
@@ -50,7 +50,17 @@
 }
 
 #utilitiesMenu li a {
-    color: #000
+    color: #000;
+}
+
+#utilitiesMenuList div {
+	color: black;
+	text-align: left;
+	padding: 4px;
+}
+
+#utilitiesMenuList ul.subMenu {
+	padding-left: 8px;
 }
 
 #utilitiesMenuButton {
@@ -82,17 +92,25 @@ span.utilMenuSeparator {
 <g:set var="buildNumber"><g:meta name="environment.BUILD_NUMBER"/></g:set>
 <g:set var="buildId"><g:meta name="environment.BUILD_ID"/></g:set>
 <div id="utilitiesMenu">
-    <ul id="utilitiesMenuList">
-        <li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.com.recomdata.adminHelpURL}', '_help')">Help</a></li>
-        <li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.quickStartURL}', '_quick_start')">Quick Start Guide</a></li>
-        <g:if test="${grailsApplication.config.com.recomdata.containsKey("bugreportURL")}">
-            <li><a href="#" onclick="jQuery('#utilitiesMenu').hide();window.open('${grailsApplication.config.com.recomdata.bugreportURL}')">Report a Bug</a></li>
-        </g:if>
-        <li><a onclick="jQuery('#utilitiesMenu').hide();" href="mailto:${grailsApplication.config.com.recomdata.contactUs}">Contact Us</a></li>
-        <li><a href="#" onclick="jQuery('#utilitiesMenu').hide();alert('${grailsApplication.config.com.recomdata.appTitle}', 'Build Version: ${buildNumber} - ${buildId}')">About</a></li>
+    <div id="utilitiesMenuList">
+        <div>Help</div>
+		<ul class="subMenu">
+			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.com.recomdata.adminHelpURL}', '_help')">Transmart Wiki</a></li>
+			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.quickStartURL}', '_quick_start')">Quick Start Guide</a></li>
+			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.scatterPlotURL}', '_scatter_plot')">Scatter Plot</a></li>
+			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.boxPlotURL}', '_box_plot')">Box Plot</a></li>
+			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.diffexURL}', '_diff_ex')">Differential Expression</a></li>			
+		</ul>
         <li class="utilMenuSeparator"><span class="utilMenuSeparator">&nbsp;</span></li>
-        <li><a href="${createLink(controller: 'changeMyPassword', action: 'show')}">Change My Password</a></li>
-        <li><a href="${createLink(controller: 'login', action: 'forceAuth')}">Log Out</a></li>
-    </ul>
+		<ul>
+        	<g:if test="${grailsApplication.config.com.recomdata.containsKey("bugreportURL")}">
+            	<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();window.open('${grailsApplication.config.com.recomdata.bugreportURL}')">Report a Bug</a></li>
+        	</g:if>
+        	<li><a onclick="jQuery('#utilitiesMenu').hide();" href="mailto:${grailsApplication.config.com.recomdata.contactUs}">Contact Us</a></li>
+        	<li class="utilMenuSeparator"><span class="utilMenuSeparator">&nbsp;</span></li>
+        	<li><a href="${createLink(controller: 'changeMyPassword', action: 'show')}">Change My Password</a></li>
+        	<li><a href="${createLink(controller: 'login', action: 'forceAuth')}">Log Out</a></li>
+		</ul>
+    </div>
 </div>
 </th>
