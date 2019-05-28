@@ -98,7 +98,7 @@ span.utilMenuSeparator {
 			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.com.recomdata.adminHelpURL}', '_help')">Transmart Wiki</a></li>
 			<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.quickStartURL}', '_quick_start')">Quick Start Guide</a></li>
 			<g:if test="${grailsApplication.config.selectingDataURL != null && !grailsApplication.config.selectingDataURL.isEmpty()}">
-				<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.sselectingDataURL}', '_selecting_data')">Selecting Data</a></li>
+				<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.selectingDataURL}', '_selecting_data')">Selecting Data</a></li>
 			</g:if>
 
 			<g:if test="${grailsApplication.config.scatterPlotURL != null && !grailsApplication.config.scatterPlotURL.isEmpty()}">
