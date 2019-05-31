@@ -548,6 +548,7 @@ class ChartService {
 
                 ChartFactory.chartTheme.apply(chart);
                 chart.setChartParameters();
+
                 chart.plot.renderer.maximumBarWidth = 0.09;
                 break;
 
@@ -708,7 +709,7 @@ class ChartService {
                             g2.setPaint(getItemFillPaint(row, column));
                         }
                         else {
-                            g2.setPaint(getItemPaint(row, column));
+                            g2.setPaint(Color.GRAY);
                         }
                         g2.fill(shape);
                     }
