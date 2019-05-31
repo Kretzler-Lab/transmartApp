@@ -56,6 +56,8 @@ requested every 90 days.<br>
 """
 }
 
+org.transmartproject.enableAcrossTrials = false
+
 //Disabling/Enabling UI tabs
 ui {
     tabs {
