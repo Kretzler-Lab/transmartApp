@@ -46,19 +46,14 @@ motd {
     motd_title = "<center>Welcome<center>"
     motd_text = """\
 <center>
+<br/>
 You are about to enter the data sharing center of the NEPTUNE project.<br />
- <br />
-This version 1.6 release of NEPTUNE tranSMART is being made 12MAY2016 <br />
-and includes data and ontology updates.
 <br />
 Upon login, new users will be asked to agree to the data usage and <br />
 attribution policy of the site.  Renewal of that agreement will be <br />
 requested every 90 days.  <br />
-<br />
-<a href="https://www.rarediseasesnetwork.org/rdnwebapp/Members/ConsortiaPage.aspx?DirectoryOwnerId=6855&Root=0&Owner=3587" target="_blank" style="text-decoration:underline;color:#0000FF">Click here</a> for Neptune-specific help on using tranSMART,
-<br />
-and to learn more about the change with tranSMART 1.6.
-<br />
+<br/>
+Contact <a href="mailto:neptunetmsupport@umich.edu" style="color: #0000EE; text-decoration: underline">support</a> if you have forgotten your username and/or password.
 </center>
 """
 }
