@@ -110,6 +110,12 @@ span.utilMenuSeparator {
 			<g:if test="${grailsApplication.config.diffexURL != null && !grailsApplication.config.diffexURL.isEmpty()}">
 				<li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.diffexURL}', '_diff_ex')">Differential Expression</a></li>			
 			</g:if>
+            <g:if test="${grailsApplication.config.metabolitesURL != null && !grailsApplication.config.metabolitesURL.isEmpty()}">
+                <li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.metabolitesURL}', '_diff_ex')">Metabolites in tranSMART</a></li>
+            </g:if>
+            <g:if test="${grailsApplication.config.proteinsURL != null && !grailsApplication.config.proteinsURL.isEmpty()}">
+                <li><a href="#" onclick="jQuery('#utilitiesMenu').hide();popupWindow('${grailsApplication.config.proteinsURL}', '_diff_ex')">Proteins in tranSMART</a></li>
+            </g:if>
 		</ul>
         <li class="utilMenuSeparator"><span class="utilMenuSeparator">&nbsp;</span></li>
 		<ul>
