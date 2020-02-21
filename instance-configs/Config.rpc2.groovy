@@ -14,6 +14,8 @@ scatterPlotURL = "../../files/RPC2_scatterplot.pdf"
 boxPlotURL = "../../files/RPC2_boxplot.pdf"
 diffexURL = "../../files/RPC2_diffex.pdf"
 selectingDataURL = "../../files/RPC2_selectingdata.pdf"
+metabolitesURL = "../../files/Metabolites_in_tranSMART.xlsx"
+proteinsURL = "../../files/Proteins_in_tranSMART.xlsx"
 dataAttestationText = """
 <p>
 It is the responsibility of all users to protect the privacy of individuals who are subjects in the data; to not use or disclose the data other than as permitted; and to appropriately secure the data.</p>
