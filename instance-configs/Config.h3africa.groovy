@@ -177,7 +177,7 @@ com.recomdata.smallLogo="no_graphic.png"
 com.recomdata.contactUs = "H3AfricaTMSupport@umich.edu"
 
 // site administrator contact email address
-com.recomdata.adminEmail = "H3AfricaTMSupport@umich.eduTMSupport@umich.edu"
+com.recomdata.adminEmail = "H3AfricaTMSupport@umich.edu"
 
 // application title
 com.recomdata.appTitle = "H3Africa tranSMART"
