@@ -12,8 +12,8 @@
 quickStartURL = "../../files/H3Africa_tranSMART_Quick_Start_Guide.pdf"
 scatterPlotURL = "../../files/H3Africa_scatterplot.pdf"
 boxPlotURL = "../../files/H3Africa_boxplot.pdf"
-diffexURL = "../../files/H3Africa_diffex.pdf"
-selectingDataURL = "../../files/H3Africa_selectingdata.pdf"
+diffexURL = ""
+selectingDataURL = ""
 dataAttestationText = """
 <p>
 It is the responsibility of all users to protect the privacy of individuals who are subjects in the data; to not use or disclose the data other than as permitted; and to appropriately secure the data.</p>
