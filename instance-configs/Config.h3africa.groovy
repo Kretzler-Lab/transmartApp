@@ -16,14 +16,14 @@ diffexURL = ""
 selectingDataURL = ""
 dataAttestationText = """
 <p>
-It is the responsibility of all users to protect the privacy of individuals who are subjects in the data; to not use or disclose the data other than as permitted; and to appropriately secure the data.</p>
+It is the responsibility of all users to protect the privacy of individuals who are subjects in the data; to not use or disclose the data other than as permitted; and to appropriately secure the data.
 <p>
 By clicking “I agree” below, users agree to the following:
 <ul style="list-style-type: square; list-style-position: outside; padding-left: 18px;">
-<li>No attempt shall be made to link subject data to a participant.</li>
-<li>Any disclosure of data, analysis, or results from tranSMART will follow the procedures outlined in the contract.</li>
-<li>Further data analysis on hypotheses generated via tranSMART will be pursued by the H3Africa working groups.</li>
-<li>As H3Africa data are continuously updated, there will be periodic, announced updates to the data in tranSMART, with resulting possible changes in analysis results.</li>
+<li>No attempt shall be made to link subject data to a H3 Africa participant.</li>
+<li>Any disclosure of data, analysis, or results from tranSMART must be in accordance with appropriate H3 Africa policies and procedures.</li>
+<li>Further data analysis on hypotheses generated via tranSMART will be done via existing H3 Africa policies and procedures.</li>
+<li>As H3 Africa data are still being collected and cleaned, there will be periodic, announced updates to the data in tranSMART, which may result in changes to analysis results.</li>
 </ul>
 </p>
 """
@@ -45,13 +45,13 @@ motd {
     motd_title = "<center>Welcome<center>"
     motd_text = """\
 <center>
-Welcome to the H3Africa instance of tranSMART.<br />
+Welcome to the H3 Africa instance of tranSMART.<br />
  <br />
 Upon log in, new users will be asked to agree to the data usage and <br>
 attribution policy of the site. Renewal of that agreement will be <br>
 requested every 90 days.<br>
 <br>
-<a href="${quickStartURL}" target="_blank">Click here for H3Africa-specific help on using tranSMART.</a>
+<a href="${quickStartURL}" target="_blank">Click here for H3 Africa-specific help on using tranSMART.</a>
 </center>
 """
 }
@@ -180,7 +180,7 @@ com.recomdata.contactUs = "H3AfricaTMSupport@umich.edu"
 com.recomdata.adminEmail = "H3AfricaTMSupport@umich.edu"
 
 // application title
-com.recomdata.appTitle = "H3Africa tranSMART"
+com.recomdata.appTitle = "H3 Africa tranSMART"
 
 //Quick Start Guide URL
 quickStartURL = "../../files/H3Africa_tranSMART_Quick_Start_Guide.pdf"
