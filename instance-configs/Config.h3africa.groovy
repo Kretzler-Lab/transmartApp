@@ -70,14 +70,14 @@ ui {
         gwas.hide = true
         uploadData.hide = true
         datasetExplorer {
-            gridView.hide = false
-            dataExport.hide = false
-            dataExportJobs.hide = false
+            gridView.hide = true
+            dataExport.hide = true
+            dataExportJobs.hide = true
             // Note: by default the analysisJobs panel is NOT shown
             // Currently, it is only used in special cases
             analysisJobs.show = false
             workspace.hide = false
-	    rawDataExport.enabled = true
+	    rawDataExport.enabled = false
         }
     }
 }
